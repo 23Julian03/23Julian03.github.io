@@ -1,0 +1,130 @@
+.filter {
+    border-radius: 10px;
+    font-size: 1.4rem;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.new1 {
+    background-color: #3b3b3b;
+    padding: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.new2 {
+    background-color: #969696;
+    padding: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.subtitle {
+    text-align: center;
+    padding-right: 0.5rem;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #0652dd,
+            0 0 50px #0652dd,
+            0 0 100px #0652dd;
+}
+
+.versionnumber {
+    display: inline-block;
+    justify-content: center;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: 1rem;
+    text-shadow: 0 0 10px #0652dd,
+            0 0 50px #0652dd,
+            0 0 100px #0652dd;
+}
+
+.discription {
+    color: whitesmoke;
+    text-align: left;
+}
+
+.link {
+    color: whitesmoke;
+    text-align: left;
+}
+
+.hashtags {
+    color: aqua;
+    text-align: left;
+}
+
+a {
+    color: green;
+}
+
+.logo1 {
+    float: left;
+    padding-right: 1.5%; 
+    padding-bottom: 1%; 
+    min-width: 270px;    
+}
+
+.logo1:hover {
+    box-shadow: 0 1.9rem 3.8rem rgba(0,0,0,0.3), 0 1.5rem 1.2rem rgba(0,0,0,0.22);
+        transform: translate(0, -1rem);
+}
+
+.logo2 {
+    float: right;
+    padding-left: 1.5%; 
+    padding-bottom: 1%; 
+    min-width: 270px;
+}
+
+.logo2:hover {
+    box-shadow: 0 1.9rem 3.8rem rgba(0,0,0,0.3), 0 1.5rem 1.2rem rgba(0,0,0,0.22);
+        transform: translate(0, -1rem);
+}
+
+@media all and (max-width: 500px) {
+    .subtitle {
+        font-size: 2.5rem;
+    }
+    
+    .versionnumber {
+        font-size: 1.4rem;
+    }
+    
+    .logo1, .logo2 {
+        float: inherit;
+        display: block;
+    }
+    
+    .subtitle {
+        text-align: left;
+    }
+}
+
+@media all and (min-width: 1250px) {
+    .new1, .new2 {
+        height: 18rem;
+    }
+    
+    .logo1 {
+        width: 355px;
+        height: 200px;
+    }
+    
+    .logo2 {
+        width: 355px;
+        height: 200px;
+    }
+}
+
+@media all and (min-width: 2000px) {
+    .new1, .new2 {
+        height: 30rem;
+    }
+}

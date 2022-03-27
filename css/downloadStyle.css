@@ -1,0 +1,68 @@
+.downloads {
+    margin: 15px;
+    font-size: 1.4rem;
+}
+
+.filter {
+    border-radius: 10px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.button {
+    background-color: rgb(0, 160, 170);
+    width: 150px;
+    height: 40px;
+    color: whitesmoke;
+    border-radius: 20px;
+    font-size: 1.3rem;
+	margin-right: 20px;
+    cursor: pointer;
+}
+
+.software, .release, .version {
+    display: inline-block;
+}
+
+.software {
+    padding-right: 15px;
+    width: 280px;
+}
+
+.release {
+    padding-right: 15px;
+    width: 210px;
+}
+
+.version {
+    padding-right: 15px;
+    width: 120px;
+}
+
+a {
+    color: rgb(0, 160, 170);
+}
+
+@media all and (max-width: 1100px) {
+    .software {
+       margin-bottom: 5px;
+    }
+    
+    .version {
+        display: block;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    .release {
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+@media all and (max-width: 1050px) {
+    .button {
+        display: block;
+        margin-bottom: 5px;
+    }
+}

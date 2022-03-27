@@ -1,0 +1,18 @@
+.content {
+    margin: 20px;
+}
+
+.image {
+    min-width: 270px;   
+}
+
+.image:hover {
+    box-shadow: 0 1.9rem 3.8rem rgba(0,0,0,0.3), 0 1.5rem 1.2rem rgba(0,0,0,0.22);
+        transform: translate(0, -1rem);
+}
+
+@media all and (max-width: 550px) {
+    h1 {
+        font-size: 25px;
+    }   
+}
