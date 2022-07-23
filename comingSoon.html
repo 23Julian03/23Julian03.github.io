@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- @version 1-0-0 -->
+
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Julian Lamm"/>
+        <meta name="description" content="Demnächst"/>
+        <meta name="keywords" content="Julian, Lamm, Software, Games, Spiele, Java">
+        
+        <link href="css/mainStyle.css" rel="stylesheet">
+        <link href="css/comingSoonStyle.css" rel="stylesheet">
+        <link href="graphics/logo.png" rel="shortcut icon">
+
+        <title>CodeEagle - Demnächst</title>
+    </head>
+
+    <body>
+        <!-- NAVIGATION BAR -->
+        <nav>
+            <div id="navbarContent">
+                <!-- LOGO -->
+                <div id="logo">
+                    <a id="companyName" href="index.html#">CodeEagle</a>
+                    <img src="graphics/logo.png" alt="Logo Adler" width="50px" height="50px">
+                </div>
+                <!-- BUTTON TO OPEN THE NAVIGATION BAR (for smaller devices) -->
+                <input type="checkbox" id="toggle_button">
+                <label for="toggle_button" class="toggle_button">
+                    <span></span> <!-- lines -->
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <!-- ELEMENTS OF THE NAVIGATION BAR -->
+                <ul>
+                    <li><a href="#">Übersicht</a></li>
+                    <li id="active"><a href="comingSoon.html#">Demnächst</a></li>
+                    <li class="expandable_li"> <!-- download -->
+                        <input type="checkbox" id="download_checkbox">
+                        <label for="download_checkbox"><img src="graphics/down.png">Download</label>
+                        <ul class="dropdown">
+                            <li><a href="#">Alle</a></li> <!-- sub categories -->
+                            <li><a href="#">Spiele</a></li>
+                            <li><a href="#">Software</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Neu</a></li>
+                    <li><a href="#">Referenzen</a></li>
+                    <li><a href="#">Hilfe</a></li>
+                    <li><a href="#">Über mich</a></li>
+                    <li><a href="#">Impressum</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- CONTENT -->
+        <section id="content">
+            <div class="contentBox"> 
+                <h1>Webseite</h1> <!-- title, subtitle and text -->
+                <h2>Demnächst verfügbar</h2><br>
+                <p>Diese Internetseite wird komplett überarbeitet und unter einer neuen Domain verfügbar sein.</p>
+            
+                <div class="countdown"> <!-- boxes -->
+                    <div class="time"><a id="day"></a><span>Days</span></div>
+                    <div class="time"><a id="hour"></a><span>Hours</span></div>
+                    <div class="time"><a id="minute"></a><span>Minutes</span></div>
+                    <div class="time"><a id="second"></a><span>Seconds</span></div>
+                </div>
+            </div>
+
+            <div class="imageBox"> <!-- image -->
+                <img src="graphics/worker.png" alt="Arbeiter" width=508px>
+            </div>
+        </section>
+
+        <script src="javascript/comingSoonAction.js"></script>
+        <script src="javascript/toggleButtonAction.js"></script> <!-- open-menu-button animation when the button will be clicked -->
+    </body>
+</html>
