@@ -38,6 +38,10 @@
     margin: 20px 0;
 }
 
+#content .contentBox .countdown .above, #content .contentBox .countdown .below {
+    display: flex;
+}
+
 #content .contentBox .countdown .time { /* box */
     display: flex;
     justify-content: center;
@@ -102,8 +106,22 @@
 }
 
 @media(max-width: 560px) { /* remove image */
-    #content .contentBox {
-        display: contents;
+    #content .contentBox h1 {
+        font-size: 50px;
+    }
+
+    #content .contentBox h2 {
+        font-size: 23px;
+    }
+    
+    #content .contentBox .countdown {
+        display: block;
+    }
+
+    #content .contentBox .above, #content .contentBox .below {
+        margin-bottom: 15px;
+        align-items: center;
+        justify-content: center;
     }
     
     #content .imageBox {
