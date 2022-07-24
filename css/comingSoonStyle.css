@@ -105,7 +105,7 @@
     }
 }
 
-@media(max-width: 560px) {
+@media(max-width: 560px) { /* smaller and adjust position */
     #content .contentBox h1 {
         font-size: 50px;
     }

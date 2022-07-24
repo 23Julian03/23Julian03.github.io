@@ -24,7 +24,7 @@ h1 {
 }
 
 @media(max-width: 300px) {
-    img {
+    img { /* image smaller */
         width: 200px;
     }
 }
