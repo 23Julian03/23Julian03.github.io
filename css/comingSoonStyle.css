@@ -105,7 +105,7 @@
     }
 }
 
-@media(max-width: 560px) { /* remove image */
+@media(max-width: 560px) {
     #content .contentBox h1 {
         font-size: 50px;
     }
