@@ -12,12 +12,20 @@
         <meta name="keywords" content="Julian, Lamm, Software, Games, Spiele, Java">
         
         <link href="css/mainStyle.css" rel="stylesheet">
+        <link href="css/transitions.css" rel="stylesheet">
         <link href="graphics/logo.png" rel="shortcut icon">
 
         <title>CodeEagle - Übersicht</title>
     </head>
     
     <body>
+        <noscript> <!-- JavaScript is disabled - error page will be loaded -->
+            <META HTTP-EQUIV="Refresh" CONTENT="0;URL=noJavaScript.html">
+        </noscript>
+
+        <!-- PAGE TRANSITION -->
+        <div class="transition transition-3 is-active"></div>
+
         <!-- NAVIGATION BAR -->
         <nav>
             <div id="navbarContent">
@@ -26,6 +34,7 @@
                     <a id="companyName" href="index.html#">CodeEagle</a>
                     <img src="graphics/logo.png" alt="Logo Adler" width="50px" height="50px">
                 </div>
+                
                 <!-- BUTTON TO OPEN THE NAVIGATION BAR (for smaller devices) -->
                 <input type="checkbox" id="toggle_button">
                 <label for="toggle_button" class="toggle_button">
@@ -36,26 +45,32 @@
 
                 <!-- ELEMENTS OF THE NAVIGATION BAR -->
                 <ul>
-                    <li><a href="#">Übersicht</a></li>
+                    <li><a href="overview.html#">Übersicht</a></li>
                     <li><a href="comingSoon.html#">Demnächst</a></li>
                     <li class="expandable_li"> <!-- download -->
                         <input type="checkbox" id="download_checkbox">
                         <label for="download_checkbox"><img src="graphics/down.png">Download</label>
                         <ul class="dropdown">
-                            <li><a href="#">Alle</a></li> <!-- sub categories -->
-                            <li><a href="#">Spiele</a></li>
-                            <li><a href="#">Software</a></li>
+                            <li><a href="download.html#">Alle</a></li> <!-- sub categories -->
+                            <li><a href="download.html#">Spiele</a></li>
+                            <li><a href="download.html#">Software</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Neu</a></li>
-                    <li><a href="#">Referenzen</a></li>
-                    <li><a href="#">Hilfe</a></li>
-                    <li><a href="#">Über mich</a></li>
-                    <li><a href="#">Impressum</a></li>
+                    <li><a href="new.html#">Neu</a></li>
+                    <li><a href="credentials.html#">Referenzen</a></li>
+                    <li><a href="help.html#">Hilfe</a></li>
+                    <li><a href="aboutMe.html#">Über mich</a></li>
+                    <li><a href="imprint.html#">Impressum</a></li>
                 </ul>
             </div>
         </nav>
-    
+
+        <!-- CONTENT -->
+        <section id="content">
+            
+        </section>
+
+        <script src="javascript/transitionsAction.js"></script>
         <script src="javascript/toggleButtonAction.js"></script> <!-- open-menu-button animation when the button will be clicked -->
     </body>
 </html>

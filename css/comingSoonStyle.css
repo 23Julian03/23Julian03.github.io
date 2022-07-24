@@ -124,7 +124,7 @@
         justify-content: center;
     }
     
-    #content .imageBox {
-        display: none;
+    #content .imageBox img {
+        width: 250px;
     }
 }
