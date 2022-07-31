@@ -1,130 +1,142 @@
-:root { /* variables */
-    --foreground-color: #ff0083;
+#content { /* content width and position center */
+    max-width: 1200px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 0 15px;
 }
 
-#content { /* content of the page */
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    
-    color: var(--text-color);
-    
+/* CARD */
+#content .card {
+    float: left;
+    padding: 30px 30px;
+    max-width: 640px;
+    margin-top: 8%;
+
     user-select: none;
-
-    max-width: 1700px;
-    margin: 0 auto;
 }
 
-#content .contentBox { /* description and timer */
-    position: relative;
-    max-width: 650px;
-    padding-top: 10%;
-}
-
-#content .contentBox h1 { /* title */
+#content .card h1 { /* title */
     font-size: 72px;
-    color: var(--foreground-color);
+    color: var(--foreground-color-2);
     text-transform: uppercase;
 }
 
-#content .contentBox h2 { /* subtitle */
+#content .card h2 { /* subtitle */
     font-size: 30px;
+    color: var(--text-color);
     text-transform: uppercase;
 }
 
-#content .contentBox .countdown { /* boxes */
+#content .card .countdown { /* boxes */
     display: flex;
     margin: 20px 0;
 }
 
-#content .contentBox .countdown .above, #content .contentBox .countdown .below {
+#content .card .countdown .above, 
+#content .card .countdown .below {
     display: flex;
 }
 
-#content .contentBox .countdown .time { /* box */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: var(--text-color);
-    margin-right: 20px;
+#content .card .countdown .time { /* box */
     width: 100px;
     height: 90px;
-    font-weight: 600;
+    margin-right: 20px;
     padding: 10px 5px 15px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background: var(--text-color);
     border-radius: 12px;
     box-shadow: 4px 4px 10px #4b4749 inset;
+    font-weight: 600;
 }
 
-#content .contentBox .countdown .time span { /* box label */
+#content .card .countdown .time span { /* box label */
     margin-top: -10px;
+    
     font-size: 20px;
     font-weight: 600;
     color: #3f325c;
 }
 
-#content .contentBox a { /* time */
-    position: relative;
+#content .card .countdown .time p { /* time */
     margin-top: -12px;
-    display: inline-block;
-
-    font-size: 35px;
     padding: 15px 35px;
-    text-decoration: none;
-    border-radius: 10px;
-
+    
+    font-size: 35px;
     color: var(--foreground-color);
     font-family: Verdana, sans-serif;
 }
 
-#content .imageBox { /* image */
+/* IMAGE */
+#content .image { /* image */
+    float: right;
     max-width: 500px;
     width: 100%;
-    margin-top: 15px;
 }
 
-@media(max-width: 1250px) { /* image below text and boxes */
-    #content { 
-        display: grid;
-    }
-}
-
-@media(max-width: 700px) { /* center content */
+/* SMALLER DEVICES */
+@media(max-width: 1800px) {
     #content {
-        text-align: center;
-        margin: 32px;
-    }
-
-    #content .imageBox {
-        margin: 0 auto;
-    }
-
-    #content .contentBox .countdown {
-        justify-content: center;
+        width: 95%;
+        padding: 0 10px;
     }
 }
 
-@media(max-width: 560px) { /* smaller and adjust position */
-    #content .contentBox h1 {
+@media(max-width: 1250px) {
+    #content .card,
+    #content .image {
+        float: none;
+        margin: 40px auto;
+    }
+    
+    #content .card {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 560px) {
+    #content .card h1 {
         font-size: 50px;
     }
 
-    #content .contentBox h2 {
+    #content .card h2 {
         font-size: 23px;
     }
     
-    #content .contentBox .countdown {
+    #content .card .countdown {
         display: block;
     }
 
-    #content .contentBox .above, #content .contentBox .below {
+    #content .card .above {
         margin-bottom: 15px;
-        align-items: center;
-        justify-content: center;
     }
-    
-    #content .imageBox img {
+
+    #content .image img {
         width: 250px;
+        
+    }
+    #content .image {
+        text-align: center;
+    }
+}
+
+@media(max-width: 350px) {
+    #content {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content .card {
+        margin: 20px 0;
+        padding: 10px 18px;
+
+        text-align: center;
+    }
+
+    #content .card h1 {
+        font-size: 40px;
     }
 }
